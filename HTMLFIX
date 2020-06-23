@@ -1,0 +1,1148 @@
+<!-- HTML Changes -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css">
+    body{
+    	font-family: Arial, Helvetica, sans-serif; 
+    	font-size:13px;
+    }
+    #contenttext{
+    	font-family: Arial, Helvetica, sans-serif; 
+    	font-size:14px;
+    }
+    div.main{
+    	width:800px;
+    	margin:0 auto;
+    	margin-top:30px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    div.content{
+    	width:800px;
+    	margin:0 auto;
+    }
+    .bgls {
+        background-image: url("http://images.mylearningresource.com/SHRM/Prod_background.jpg");
+    	height: 156px;
+    }
+    #navbar{
+    width:auto;
+    height:36px;
+    background:url(img/navbar-bg.png) left top repeat-x; }
+    #navbar .inbar{
+    display:block;
+    height:36px;
+    background:url(img/right-round.png) right top no-repeat; }
+    #navbar ul, #navbar ul li{
+    border:0px;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    height:36px;
+    line-height:36px; } #navbar ul{
+    background:url(img/left-round.png) left top no-repeat; } 
+    #navbar ul li{
+    float:left;
+    display:block;
+    line-height:36px; } 
+    #navbar ul li a{
+    color:#403e32;
+    text-decoration:none;
+    font-weight:bold;
+    display:block; } 
+    #navbar ul li a span{
+    padding:0 20px 0 0;
+    height:36px;
+    line-height:36px;
+    display:block;
+    margin-left:20px; }
+    #navbar .navhome a, #navbar .navhome a:hover{
+    background:url(img/a-bg.png) left top no-repeat;
+    height:36px;
+    line-height:36px; } 
+    #navbar .navhome a span, #navbar .navhome a:hover span{
+    color:#FFFFFF;
+    background:url(img/span-bg.png) right top no-repeat;
+    height:36px;
+    line-height:36px; } 
+    #navbar ul li a:hover{
+    background:url(img/ahover-bg.png) left top no-repeat;
+    height:36px;
+    line-height:36px; } 
+    #navbar ul li a:hover span{
+    background:url(img/spanhover-bg.png) right top no-repeat;
+    height:36px;
+    line-height:36px; }
+    .phrsphrfontheading {
+    	color: #4a7fab;
+    	font-weight: bold;
+    	font-size:16px;
+    	padding-top: 5px;
+    }
+    .red {color: #FF0000}
+    .Button {
+    display: inline-block;
+    border: 0px solid #ffffff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 15px Arial;
+    font-weight: bold;
+    padding: 5px 5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-shadow:0px 0px 0px #444444;
+    -moz-box-shadow: 0px 0px 0px 0px #444444;
+    -webkit-box-shadow: 0px 0px 0px 0px #444444;
+    box-shadow: 0px 0px 0px 0px #444444;
+    color: #ffffff;
+    background: #4a7fab;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4a7fab), to(#66abfa));
+    background-image: -moz-linear-gradient(top,  #4a7fab,  #66abfa);
+    background-image:     -ms-linear-gradient(top, #4a7fab,  #66abfa);
+    background-image:      -o-linear-gradient(top, #4a7fab,  #66abfa);
+    background-image:         linear-gradient(top, #4a7fab,  #66abfa);
+    filter:  progid:DXImaGETransform.Microsoft.gradient(startColorstr='#4a7fab', endColorstr='#66abfa');
+    
+    }
+    .Button:hover {
+    background: #4a7fab;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66abfa), to(#4a7fab));
+    background-image: -moz-linear-gradient(top,  #66abfa,  #4a7fab);
+    background-image:     -ms-linear-gradient(top, #66abfa,  #4a7fab);
+    background-image:      -o-linear-gradient(top, #66abfa,  #4a7fab);
+    background-image:         linear-gradient(top, #66abfa,  #4a7fab);
+    filter:  progid:DXImaGETransform.Microsoft.gradient(startColorstr='#66abfa', endColorstr='#4a7fab');
+    text-decoration: none;
+    color: #ffffff;
+    }
+    .Button:active {
+    color: #ffffff;
+    position: relative;
+    top: 1px;
+    }
+    #wrapper {
+    	text-align: left;
+    	margin: 0px auto;
+    	padding: 0px;
+    	border:0;
+    	width: 800px;
+    	}
+    
+    #header {
+    	margin: 0 0 0px 0;
+    	}
+    
+    #side-a {
+    	float: left;
+    	width: 500px;
+    	padding: 3px;
+    	
+    }
+    
+    #side-b { 
+    	margin: 0;
+    	float: right;
+    	width: 200px;
+    	vertical-align:middle;
+    	text-align:center
+    	
+    }
+    /* Scroll To Top Button	*/
+    .scrollToTop{
+        position: fixed;
+        z-index: 1000;
+        bottom: 5px;
+        right: 10px;
+        text-transform: uppercase;
+        font-size: 9px;
+        
+    }
+    .scrollToTop:before{
+        font-family: "FontAwesome";
+        content: "\f106";
+        color: #fff;
+        background: rgba(127, 127, 127, 0.6);
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        left: 0;
+        top: -60px;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 50px;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+        transition:.15s ease all;	
+    }
+    .scrollToTop:hover{
+    	text-decoration:none;
+    }
+    .scrollToTop:hover:before{
+    	background: rgba(76, 75, 75, 0.6);
+    }
+    .myButton {
+    	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    	box-shadow:inset 0px -3px 7px 0px #29bbff;
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+    	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+    	background-color:#2dabf9;
+    	-moz-border-radius:3px;
+    	-webkit-border-radius:3px;
+    	border-radius:3px;
+    	border:1px solid #0b0e07;
+    	display:inline-block;
+    	cursor:pointer;
+    	color:#ffffff;
+    	font-family:Arial;
+    	font-size:13px;
+    	font-weight:bold;
+    	padding:9px 16px;
+    	text-decoration:none;
+    	text-shadow:0px 1px 0px #263666;
+    }
+    .myButton:hover {
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+    	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+    	background-color:#0688fa;
+    }
+    .myButton:active {
+    	position:relative;
+    	top:1px;
+    }
+    
+    .orangeButton {
+    	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9a34e), color-stop(1, #fb9e25));
+    	background:-moz-linear-gradient(top, #f9a34e 5%, #fb9e25 100%);
+    	background:-webkit-linear-gradient(top, #f9a34e 5%, #fb9e25 100%);
+    	background:-o-linear-gradient(top, #f9a34e 5%, #fb9e25 100%);
+    	background:-ms-linear-gradient(top, #f9a34e 5%, #fb9e25 100%);
+    	background:linear-gradient(to bottom, #f9a34e 5%, #fb9e25 100%);
+    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9a34e', endColorstr='#fb9e25',GradientType=0);
+    	background-color:#f9a34e;
+    	-moz-border-radius:6px;
+    	-webkit-border-radius:6px;
+    	border-radius:6px;
+    	border:1px solid #eeb44f;
+    	display:inline-block;
+    	cursor:pointer;
+    	color:#ffffff;
+    	font-family:Arial;
+    	font-size:13px;
+    	font-weight:bold;
+    	padding:6px 24px;
+    	text-decoration:none;
+    	text-shadow:0px 1px 0px #cc9f52;
+    }
+    .orangeButton:hover {
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477));
+    	background:-moz-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+    	background:-webkit-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+    	background:-o-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+    	background:-ms-linear-gradient(top, #fb9e25 5%, #ffc477 100%);
+    	background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477',GradientType=0);
+    	background-color:#fb9e25;
+    }
+    .orangeButton:active {
+    	position:relative;
+    	top:1px;
+    } 
+    div.vertical-line{
+      width: 1px;
+      background-color: #2479a3;
+      height: 100%;
+      float: left;
+      border: 1px #2479a3 ;
+      border-radius: 1px;
+    }
+    div.horizontal-line{
+      width: 1px;
+      background-color: #2479a3;
+    
+      height: 1px;
+      border: 1px ridge #2479a3 ;
+      border-radius: 1px;
+    }
+    hr {
+    color:#2479a3;
+    }
+    .faqcollapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-weight:600;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+    
+    .active, .faqcollapsible:hover {
+        background-color: #555;
+    }
+    
+    .faqcontent {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+</style>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>SHRM HR Certification Course</title>
+    <script type="text/javascript">
+        function popuponclick()
+           {
+              my_window = window.open("http://documents.mylearningresource.com/SHRM/2012_SHRM_Information_Request.html",
+               "mywindow","status=1,width=600,height=500");
+             
+           }
+         
+           function closepopup()
+           {
+              if(false == my_window.closed)
+              {
+                 my_window.close ();
+              }
+              else
+              {
+                 alert('Window already closed!');
+              }
+           }
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://documents.mylearningresource.com/SHRM/steven_accordion_style.css" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+ 
+    $('.accordion-section-title').click(function(e) {
+        // Grab current anchor value
+        var currentAttrValue = $(this).attr('href');
+ 
+        if($(e.target).is('.active')) {
+            close_accordion_section();
+        }else {
+            close_accordion_section();
+ 
+            // Add active class to section title
+            $(this).addClass('active');
+            // Open up the hidden content panel
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+        }
+ 
+        e.preventDefault();
+    });
+});
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://learnhrm.shrm.org/favicon.ico" />
+    <link href="http://woork.bravehost.com/elegantNavbar/topbar.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="main">
+
+
+
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+            <tr>
+                <td width="584">
+                    <div>
+                        <p>
+                            <img src="http://documents.mylearningresource.com/SHRM/2019_SHRMLS_WebTemplateHeader_line.png" alt="Flexible Study Options" width="100%" style="border-width: 0px; margin-top: 153px; border-style: solid;" /></p>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+
+
+
+        <div class="content">
+
+            <table border="0" cellspacing="0" cellpadding="5" width="100%" bgcolor="#ffffff">
+                <tbody>
+
+                    <tr>
+                        <td width="80%">
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#ffffff">
+                                <tbody>
+                                    <tr>
+                                        <td width="57%" valign="top" style="padding-right:10px" bgcolor="#ffffff">
+                                            <p>
+                                                <font size="4" color="#000000"><a name="RegisterNow" style="text-decoration:none;color:#000000"><strong>Commit to Your Career</strong></a></font>
+                                            </p>
+                                            <p>HR professionals like you are facing new and larger challenges each day due in part to a changing workforce, shifting legislation and regulations and so much more. Ensure you're prepared for these changes, and
+                                                anything else thrown your way with SHRM's global HR credentials, SHRM-CP and SHRM-SCP.</p>
+                                            <p>By becoming SHRM certified, you prove your knowledge, competency and value to colleagues and to employers looking for a competitive edge in today's global economy. Wherever your career takes you, your SHRM certification
+                                                will define you as an HR expert and leader, and our course can help you get there.</p>
+                                            <table align="center">
+                                                <tr>
+                                                    <td bgcolor="#ffffff">
+                                                        <align="center"><strong><img src="https://www.milehighshrm.org/resource/resmgr/images/2017_mhshrm_logo_250px.jpg" width="80" height="60"</strong></p>
+                                                    </td>
+                                                    <td>&nbsp;</td>
+                                                    <td>
+                                                        <p align="center"><img src="http://documents.mylearningresource.com/SHRM/SHRM_Partnership_2020.jpg" width="80" height="60" /> &nbsp; <img src="http://documents.mylearningresource.com/SHRM/SHRM-recert-provider-2020_color_crop.png"
+                                                                alt="SHRM Learning System" width="80" height="60" /></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td width="35%" valign="top" bgcolor="#ffffff">
+                                            <table width="95%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
+                                                <tr>
+                                                    <td width="290" height="40">
+                                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #666666;width:290" cellpadding="2" cellspacing="0">
+
+                                                            <tr height="40" bordercolor="#666666">
+                                                                <th bgcolor="#666666" width="25%" height="40">
+                                                                    <p align="center">
+                                                                        <font color="#FFFFFF"><a href="#WhyEnroll" style="text-decoration:none; color:#ffffff">WHY SHOULD I ENROLL? >></a></font>
+                                                                    </p>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="290" height="40">
+                                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #666666;width:290" cellpadding="2" cellspacing="0">
+
+                                                            <tr height="40" bordercolor="#666666">
+                                                                <th bgcolor="#666666" width="25%" height="40">
+                                                                    <p align="center">
+                                                                        <font color="#FFFFFF"><a href="#WhoEnroll" style="text-decoration:none; color:#ffffff">WHO SHOULD ENROLL? >></a></font>
+                                                                    </p>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="290" height="40">
+                                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #666666;;width:290" cellpadding="2" cellspacing="0">
+
+                                                            <tr height="16" bordercolor="#666666">
+                                                                <th bgcolor="#666666" width="25%" height="40">
+                                                                    <p align="center">
+                                                                        <font color="#FFFFFF"><a href="#CourseDetails" style="text-decoration:none; color:#ffffff">TELL ME MORE ABOUT THE COURSE &gt;></a></font>
+                                                                    </p>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="290" height="40">
+                                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #666666;;width:290" cellpadding="2" cellspacing="0">
+
+                                                            <tr height="16" bordercolor="#666666">
+                                                                <th bgcolor="#666666" width="25%" height="40">
+                                                                    <p align="center">
+                                                                        <font color="#FFFFFF"><a href="#Register" style="text-decoration:none; color:#ffffff">WHAT WILL I LEARN? ></a></font>
+                                                                    </p>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="290" height="40">
+                                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #f36e2c;;width:290" cellpadding="2" cellspacing="0">
+
+                                                            <tr height="16" bordercolor="#f36e2c">
+                                                                <th bgcolor="#f36e2c" width="25%" height="40">
+                                                                    <p align="center"><a href="https://www.milehighshrm.org/events/EventDetails.aspx?id=1354309&group=" <font color="#ffffff">SIGN ME UP >></font></p> </th>
+                               </tr>
+                             </table></td>
+                           </tr>
+                       </table></td>
+                     </tr>
+                 
+                   </tbody>
+                 </table></td>
+                </tr>
+    </table>
+
+	
+	<br />
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td bgcolor="#1976d2" style="padding:5px">
+				<p><font size="4" color="#ffffff"><a name="WhyEnroll" style="text-decoration:none; color:#FFFFFF"><strong>Find Success With <span style="color:#FFFFFF">Mile High SHRM</span>'s Expert Guidance</strong></a></font>
+                                                                    </p>
+                                                    </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding:5px">
+                                                            <table>
+                                                                <td width="40%" valign="top">
+
+                                                                    <p><strong>Looking to get SHRM-CP or SHRM-SCP certified? Let our team of experts help you get there</strong>.</p>
+
+                                                                    <p>Our course combines expert instruction with the 2020 SHRM Learning System to offer a comprehensive and effective way to prepare for success on your SHRM-CP and SHRM-SCP exam.</p>
+                                                                </td>
+                                                                <td>
+
+                                                                    <table border="0" cellspacing="0" cellpadding="3" width="100%">
+                                                                        <tbody>
+
+                                                                            <tr>
+                                                                                <td width="30" valign="top" style="padding-left:50px">
+                                                                                    <img src="http://documents.mylearningresource.com/SHRM/SHRM_Instructor_Icon.png" width="50" height="50" /></td>
+
+                                                                                <td width="5">&nbsp;</td>
+                                                                                <td width="632">
+
+                                                                                    <p align="left"><strong>Gain one-on-one guidance to help you comprehend and learn to apply your new HR knowledge.</strong></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td width="30" valign="top" style="padding-left:50px">
+                                                                                    <img src="http://documents.mylearningresource.com/SHRM/SHRM_Network_Icon.png" width="50" height="50" /></td>
+
+                                                                                <td width="5">&nbsp;</td>
+                                                                                <td width="632">
+
+                                                                                    <p align="left"><strong>Network and collaborate with peers to share real-life examples and bring HR knowledge and competencies to life.</strong></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td width="30" valign="top" style="padding-left:50px">
+                                                                                    <img src="http://documents.mylearningresource.com/SHRM/SHRM_AcquireKnowledge_Icon.png" width="50" height="50" /></td>
+
+                                                                                <td width="5">&nbsp;</td>
+                                                                                <td width="632">
+
+                                                                                    <p align="left"><strong>Acquire the knowledge and understand the behavioral competencies you need to prepare to pass the exam.</strong></p>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr>
+                                                                                <td width="30" valign="top" style="padding-left:50px">
+                                                                                    <img src="http://documents.mylearningresource.com/SHRM/SHRM_StayOnTrack_Icon.png" width="50" height="50" /></td>
+
+                                                                                <td width="5">&nbsp;</td>
+                                                                                <td width="632">
+
+                                                                                    <p align="left"><strong>Stay on track to earn your certification with a structured learning experience and support.</strong></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </table>
+                                                            <br />
+
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td bgcolor="#1a3b67" style="padding:5px">
+                                                                        <p>
+                                                                            <font size="4" color="#FFFFFF"><a name="WhoEnroll" style="text-decoration:none;color:#FFFFFF"><strong>Who Should Enroll In This Course?</strong></a></font>
+                                                                        </p>
+                                                                    </td>
+                                                                </tr>
+
+                                                            </table>
+                                                            <table border="0" cellspacing="0" cellpadding="10" width="100%">
+                                                                <tbody>
+
+                                                                    <tr>
+
+                                                                        <td width="100%">
+
+                                                                            <p>Our certification preparation course is designed primarily for individuals seeking SHRM-CP or SHRM-SCP certification. Certification is a great choice for HR professionals who
+                                                                                want to:</p>
+
+
+
+
+                                                                            <ul>
+                                                                                <li>Increase their knowledge</li>
+                                                                                <li>Advance their skills</li>
+                                                                                <li>Earn recognition from the global community</li>
+                                                                            </ul>
+
+                                                                            <p align="center"><img src="http://documents.mylearningresource.com/SHRM/SHRM_Cert_Eligibility_2020.PNG" width="684" height="360" hspace="30" alt="SHRM Certification Eligibility Requirements" border="0"
+                                                                                /> </p>
+
+                                                                            <p class="content"><strong>Advance your career.</strong><br />If you're not interested in certification but want to improve your HR skills, this course provides a comprehensive and accelerated option
+                                                                                for professional development. Participants gain a generalist viewpoint, refresh key ideas and concepts, strengthen their understanding of core behavior and technical competencies
+                                                                                and increase productivity in the workplace.</p>
+
+
+
+
+                                                                        </td>
+
+
+                                                                    </tr>
+
+
+                                                            </table>
+                                                            <br />
+                                                        </td>
+                                                    </tr>
+                                                    </table>
+
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td bgcolor="#f36e2c" style="padding:5px">
+                                                                <p>
+                                                                    <font size="4" color="#ffffff"><a name="CourseDetails" style="text-decoration:none;color:#FFFFFF"><strong><span style="color:#FFFFFF">Mile High SHRM </span>Course Details & Options</strong></a></font>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding:5px">
+                                                                <div style="padding:5px">
+                                                                    <p>At <span class=>Mile High SHRM you'll be able to tap into the expertise and guidance of our highly-experienced, SHRM-certified instructors who are ready to work with you to make sure you are prepared for success on your SHRM-CP or SHRM-SCP exam.</p>
+</div>
+
+	<table border="0" cellspacing="0" cellpadding="5" width="100%" style="vertical-align:text-top">
+              <tbody>
+			 
+               <tr>
+                <td width="71%" valign="top">
+							<p><font size="4" color="#000000"><strong><font color="#000000">Spring 2020 </font> Course Details</strong></font></p>
+<table width="96%" height="41" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#000000">
+                                      
+                               <tbody>
+                                            <tr>
+                                                <th bgcolor="#D6D8DA" width="25%">Locations</th>
+                                                <th bgcolor="#D6D8DA" width="25%">Dates and Times</th>
+                                                <th bgcolor="#D6D8DA" width="25%">Contact Information</th>
+												<th bgcolor="#D6D8DA" width="25%">Course Fees</th>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" bgcolor="#ffffff"><span class="black">Mile High SHRM<br />
+Arrow Electronics<br />
+9151 Panorama Circle, Englewood, CO 80112</span></td>
+                                                            <td align="center" bgcolor="#ffffff"><span class="black"><br />
+November 7, 14, 21, 2020<br />
+8:00 AM - 5:00 PM</span></td>
+                                                            <td align="center" bgcolor="#ffffff">
+                                                                <span class="black">
+Carole Richter<br> 
+720-934-2722<br>
+crichter@crhrconsulting.com
+</span>
+
+                                                            </td>
+                                                            <td align="center" bgcolor="#ffffff">
+                                                                <span class="black">
+Fees for SHRM members are $1,095 and $1,395 for non-members.
+</span>
+
+                                                            </td>
+
+
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                    <br />
+                                                    <table border="0" cellspacing="0" cellpadding="3" width="98%">
+                                                        <tbody>
+
+                                                            <tr>
+                                                                <td width="110" valign="top"><img src="http://documents.mylearningresource.com/SHRM/SHRM_Discount_Icon.png" alt="Student Discounts" width="100" height="100" align="left" /></td>
+                                                                <td width="192" valign="top" style="background-color:#F7CFD4">
+                                                                    <p align="center">
+                                                                        <font size="2" color="#000000"><strong>Student Discounts Available</strong></font>
+                                                                    </p>
+                                                                    <p><span class="black">Contact Mile High SHRM or Carole Richter for more information.</span></p>
+
+
+
+
+
+                                                                </td>
+                                                                <td width="1">&nbsp;</td>
+                                                                <td width="220" valign="top" bgcolor="#CCCCCC">
+                                                                    <p align="center">
+                                                                        <font size="2" color="#000000"><strong>Interested in training your team?</strong></font>
+                                                                    </p>
+                                                                    <p>Ask about volume discounts or offering a program at your location. Contact <span class="black">Mile High SHRM</span> at <span class="black">crichter@crhrconsulting.com or 720-934-2722</span>.
+                                                                    </p>
+
+
+
+
+
+
+                                                                </td>
+
+                                                            </tr>
+                                                    </table>
+
+
+                                        </td>
+                                        <td width="29%" valign="top" bgcolor="#ffffff"><br />
+                                            <br />
+                                            <img src="http://documents.mylearningresource.com/SHRM/SHRM_2019LS_Testimonial.png" width="220" height="220" border="0" align="left" />
+                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                <tbody>
+
+                                                    <tr>
+
+                                                        <td width="77%"> </td>
+                                                        <td width="23%"> </td>
+                                                    </tr>
+                                            </table>
+                                        </td>
+
+                                        </tr>
+                                        </table>
+                                        <br />
+                        </td>
+                        </tr>
+
+                        </table>
+
+
+
+
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td bgcolor="#666666" style="padding:5px">
+                                    <p>
+                                        <font size="4" color="#ffffff"><a name="CourseTools" style="text-decoration:none;color:#FFFFFF"><strong>Course Preparation Tools Designed for Success</strong></a></font>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:5px">
+
+
+
+                                    <p>Enhance your learning experience with premier tools that complement our course! The 2020 SHRM Learning System offers a personalized SmartPath<sup>&trade;</sup> learning experience that is designed to dynamically adjust
+                                        based on your progress and proficiency. Real-time results allow you to use your time wisely and increase readiness for the SHRM-CP and SHRM-SCP exam.</p>
+                                    <p>Choose a program that is designed to help apply HR knowledge and competencies to real-life situations and advance your career while offering:</p>
+
+
+
+
+                                    <table border="0" cellspacing="0" cellpadding="3" width="100%">
+                                        <tbody>
+
+                                            <tr>
+                                                <td valign="middle">
+
+                                                    <p align="center"><img src="http://documents.mylearningresource.com/SHRM/2020_SHRMLS.png" width="400" height="275" hspace="5" vspace="0" border="0" alt="SHRM Learning System Modules" /></p>
+
+
+                                                </td>
+                                                <td width="5">&nbsp;</td>
+                                                <td width="75%" valign="top">
+
+
+                                                    <div class="accordion">
+                                                        <div class="accordion-section">
+                                                            <p>
+                                                                <font face="arial,helvetica,sans-serif">
+                                                                    <font size="3"> <a class="accordion-section-title" href="#accordion-0">A Personalized Learning Experience</a></font>
+                                                                </font>
+                                                            </p>
+
+                                                            <div id="accordion-0" class="accordion-section-content">
+
+                                                                <p>
+                                                                    <font face="arial,helvetica,sans-serif">
+                                                                        <font size="2">The 2020 SHRM Learning System allows instructors to work with you build a custom learning experience that helps identify HR topics you've already mastered and those you haven't, so
+                                                                            courses can be tailored to your needs</font>
+                                                                    </font>
+                                                                </p>
+
+
+                                                            </div>
+                                                            <!--end .accordion-section-content-->
+                                                        </div>
+                                                        <!--end .accordion-section-->
+                                                        <div class="accordion-section">
+                                                            <p>
+                                                                <font face="arial,helvetica,sans-serif">
+                                                                    <font size="3"> <a class="accordion-section-title" href="#accordion-1">Focused, Topic-level Learning</a></font>
+                                                                </font>
+                                                            </p>
+
+                                                            <div id="accordion-1" class="accordion-section-content">
+
+                                                                <p>
+                                                                    <font face="arial,helvetica,sans-serif">
+                                                                        <font size="2">Along with your classmates, you'll learn one small topic segment at a time to ensure you have a clear understanding and can apply the concept quickly and easily on the SHRM-CP or
+                                                                            SHRM-SCP exam and in your day-to-day HR responsibilities.</font>
+                                                                    </font>
+                                                                </p>
+
+
+                                                                <p>
+                                                                    <font face="arial,helvetica,sans-serif">
+                                                                        <font size="2">These learning modules also provide an in-depth exploration of the knowledge domains and behavioral competencies tested on the SHRM exams.</font>
+                                                                    </font>
+                                                                </p>
+                                                                <p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#shrmlsmodules">Course Outline</button></p>
+
+                                                                <div id="shrmlsmodules" class="collapse">
+                                                                    <br />
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2"><strong>MODULE // HR COMPETENCIES</strong></font>
+                                                                        </font>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span style="font-family: inherit; background-color: transparent; text-indent: 0.25in;">Leadership &amp; Navigation</span></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Ethical Practice</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Business Acumen</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Consultation</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Critical Evaluation</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Relationship Management</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Global &amp; Cultural Effectiveness</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Communication</span>&nbsp;</li>
+                                                                    </ul>
+
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2"><strong>MODULE // PEOPLE</strong></font>
+                                                                        </font>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">HR Strategic Planning</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent; text-indent: 0.25in;">Talent Acquisition </span></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Employee Engagement &amp; Retention</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Learning &amp; Development</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Total Rewards</span>&nbsp;</li>
+                                                                    </ul>
+
+
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2"><strong>MODULE // ORGANIZATION</strong></font>
+                                                                        </font>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Structure of the HR Function</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Organizational Effectiveness &amp;
+Development</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Workforce Management</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Employee &amp; Labor Relations</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Technology Management</span>&nbsp;</li>
+                                                                    </ul>
+
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2"><strong>MODULE // WORKPLACE</strong></font>
+                                                                        </font>
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">HR in the Global Context</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Diversity &amp; Inclusion</span><br></li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Risk Management</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Corporate Social Responsibility</span>&nbsp;</li>
+                                                                        <li><span style="font-family: inherit; background-color: transparent;">Employment Law &amp; Regulations
+(U.S. Only)</span>&nbsp;</li>
+                                                                    </ul>
+                                                                </div>
+
+                                                            </div>
+                                                            <!--end .accordion-section-content-->
+                                                        </div>
+                                                        <!--end .accordion-section-->
+
+                                                        <div class="accordion-section">
+                                                            <p>
+                                                                <font face="arial,helvetica,sans-serif">
+                                                                    <font size="3"> <a class="accordion-section-title" href="#accordion-3">Real-time Knowledge Gap Analysis</a></font>
+                                                                </font>
+                                                            </p>
+
+                                                            <div id="accordion-3" class="accordion-section-content">
+
+                                                                <p>
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2">Real-time results and detailed feedback from your learning progress and quiz scores help guide your course-wide and individual study priorities and reach your goal more efficiently.</font>
+                                                                        </font>
+                                                                    </p>
+
+
+
+                                                            </div>
+                                                            <!--end .accordion-section-content-->
+                                                        </div>
+                                                        <!--end .accordion-section-->
+                                                        <div class="accordion-section">
+                                                            <p>
+                                                                <font face="arial,helvetica,sans-serif">
+                                                                    <font size="3"> <a class="accordion-section-title" href="#accordion-4">Resources to Boost Exam Confidence</a></font>
+                                                                </font>
+                                                            </p>
+
+                                                            <div id="accordion-4" class="accordion-section-content">
+
+
+                                                                <p>
+                                                                    <p>
+                                                                        <font face="arial,helvetica,sans-serif">
+                                                                            <font size="2">
+                                                                                Supplement your class time learning with flashcards, real-world HR knowledge, competencies in action, practice test questions and more to make sure you're ready for your SHRM-CP or SHRM-SCP exam.
+
+
+                                                                            </font>
+                                                                        </font>
+                                                                    </p>
+
+
+                                                            </div>
+                                                            <!--end .accordion-section-content-->
+                                                        </div>
+                                                        <!--end .accordion-section-->
+
+                                                    </div>
+
+
+
+
+
+                                                </td>
+
+                                            </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <button class="faqcollapsible"><font size="3" color="#ffffff">Frequently Asked Questions (FAQs)</font></button>
+                        <div class="faqcontent">
+                            <h5><strong>Can I earn recertification credits taking this course?</strong></h5>
+                            <p>If you have already earned the SHRM Certification you can obtain up to 36 professional development credits (if you are attending this program for professional development only).</p>
+
+                            <h5><strong>How long is the course?</strong></h5>
+                            <p><span style="color:#FF0000">Three Saturdays 8:00 AM to 5:00 PM</span></p>
+
+                            <h5><strong>How do I attend a class?</strong></h5>
+                            <p><span style="color:#FF0000">((Add Partner Specific Answer Here))</span></p>
+
+                            <h5><strong>Can I ask the instructor questions during the online sessions?</strong></h5>
+                            <p><span style="color:#FF0000">((Add Partner Specific Answer Here))</span></p>
+
+                            <h5><strong>Do I need to purchase the SHRM Learning System separately?</strong></h5>
+                            <p>No. The SHRM Learning System is included with this program. There are no additional costs.</p>
+
+                            <h5><strong>What if I already own the SHRM Learning System?</strong></h5>
+                            <p><span style="color:#FF0000"><strong>Contact us</strong></span> to find the best learning options for you.</p>
+
+
+                            <h5><strong>Is the SHRM exam included with this course?</strong></h5>
+                            <p>This course does not include the final exam or exam fee. Practice exams are included.</p>
+
+                            <h5><strong>If I miss an online session will I be able to watch a recording?</strong></h5>
+                            <p><span style="color:#FF0000">((Add Partner Specific Answer Here))</span></p>
+
+                            <h5><strong>Will certification add to my credibility?</strong></h5>
+                            <div>
+                                <iframe src="https://www.youtube.com/embed/Ijzlk5kxUds?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("faqcollapsible");
+                            var i;
+                            
+                            for (i = 0; i < coll.length; i++) {
+                              coll[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling;
+                                if (content.style.display === "block") {
+                                  content.style.display = "none";
+                                } else {
+                                  content.style.display = "block";
+                                }
+                              });
+                            }
+                        </script>
+                        <br />
+                        <br />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td style="padding:5px">
+                                    <p>
+                                        <font size="4" color="#000000"><a name="Register" style="text-decoration:none;color:#000000"><strong>Register Now!</strong></a></font>
+                                    </p>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <table border="0" cellspacing="0" cellpadding="10" width="100%">
+                            <tbody>
+
+                                <tr>
+
+                                    <td width="100%">
+
+                                        <p>Ready to commit to your career with <span style="color:#000000">MIle High SHRM</span>? Sign up now before classes fill up!</p>
+
+
+
+
+                                        <table border="3" style="background-color:#ffffff;border-collapse:collapse;border:3px solid #f36e2c;;width:290" cellpadding="2" cellspacing="0" align="center">
+
+                                            <tr height="16" bordercolor="#f36e2c">
+                                                <th bgcolor="#f36e2c" width="25%" height="40">
+                                                    <p align="center"><a href="https://www.milehighshrm.org/events/EventDetails.aspx?id=1354309&group=" <font color="#ffffff">SIGN ME UP >></font></p> </th>
+                               </tr>
+                             </table>
+			
+				 </td>
+
+                           
+                </tr>
+						  
+						  
+    </table>		
+	<hr style="color:#2479a3" />
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tbody>
+			 
+               <tr>
+                             
+  
+                             
+				    
+  <td width="31%" valign="top">
+							
+				<table border="0" cellspacing="0" cellpadding="0" width="100%">
+              <tbody>
+			 
+               <tr>
+			    <td>
+				<p align="center"><strong>Looking for More Information?</strong></p>
+		
+
+
+
+
+
+
+			<p align="left"><u>Certification and Product</u><br />SHRM-CP/SHRM-SCP Eligibility<br />
+Testing Windows and Deadlines<br />
+Download Certification Handbook<br />
+SHRM Learning System<br />
+<a style="text-decoration:none; color:#1f7196" href="https://www.shrm.org/certification/pages/default.aspx" target="_blank"><strong>shrmcertification.org</strong></a></p>
+
+
+
+
+
+                                                    <p align="left"><u>HR Information</u>
+                                                        <br /> SHRM Resources<br /> Become a Member<br /> Events
+                                                        <br />
+                                                        <a style="text-decoration:none; color:#1f7196" href="https://www.shrm.org/" target="_blank"><strong>shrm.org
+</strong></a></p>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    </td>
+                                    <td width="32%" valign="top">
+
+                                        <table border="0" cellspacing="0" cellpadding="0" width="98%">
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>
+                                                        <p align="center"><strong>Have a question or prefer <br />to speak to a person?</strong></p>
+                                                        <p align="left">Call <span class="black">Carole Richter</span> at <span class="black">(720) 934-2722</span>.<br />Monday &ndash; Friday between 8:00 a.m. and 4:30 p.m. <span class="black">MST</span> for live assistance.
+                                                            Or email us at <span class="black">crichter@crhrconsulting.com</span></p>
+                                                    </td>
+                                                </tr>
+                                        </table>
+                                        <br />
+                                        <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                            <tr>
+                                                <td height="38" align="center" bgcolor="#af1e2d" style="-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;"><span style="color: #fff; font-size: 1.1em; text-decoration:none"><strong>&nbsp;<strong>Request More Info</strong></strong></span>&nbsp;</td>
+                                            </tr>
+                                        </table>
+
+                                        <p align="center"><a href="https://www.facebook.com/" target="_blank" align="left"><img src="http://images.mylearningresource.com/SHRM/facebook.png" width="35" height="35" border="0"></a><a href="http://twitter.com/" target="_blank"
+                                                align="right"><img src="http://images.mylearningresource.com/SHRM/twitter.png" width="35" height="35" border="0"></a><a href="http://youtube.com/" target="_blank" align="right"><img src="http://images.mylearningresource.com/SHRM/youtube.png" width="35" height="35" border="0"></a>
+                                            <a href="http://www.linkedin.com/" target="_blank"><img src="http://images.mylearningresource.com/SHRM/linkedinSM.png" width="35" height="35" border="0"></a><a href="http://www.whatisrss.com/" target="_blank"
+                                                align="right"><img src="http://images.mylearningresource.com/SHRM/rssfeed.png" width="35" height="35" border="0"></a></p>
+
+                                    </td>
+                                </tr>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+        </div>
+
+        <script src="http://documents.mylearningresource.com/SHRM/scrolltop.js"></script>
+
+        <script type="text/javascript" src="http://documents.mylearningresource.com/SHRM/scroll_top_image.js"></script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://documents.mylearningresource.com/SHRM/smoothscroll.js"></script>
+
+
+
+</body>
+
+</html>
