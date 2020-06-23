@@ -15,7 +15,8 @@
               <div class="">
                 <h3 class=""><span style="color:black;">Index Page Span</span></h3>
                 <div class="cardbody">Information <br> <br>Information</div>
-    			     <a href=""><button class="">More *</button></a><!-- refernce tab btns for centering completely -->
+    			     <a href=""><button class="">More *</button></a>
+                     <!-- refernce tab btns for centering completely -->
               </div> <!--end imgcard-info-->
           </div> <!-- end imgcard -->
 
