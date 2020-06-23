@@ -9,7 +9,7 @@
     	 <section ">
             <!-- link wrapped to allow for image and title to be clicked -->
             <a>
-            <h2 > *Intro* </h2>
+            <h2 > *Projects* </h2>
             <img class="img_handler" src="">
             </a> 
             
@@ -17,11 +17,10 @@
               
             <div class="">
                 <h3 class="">
-                <span style="color:black;">Index Page Span</span>
+                <span style="color:black;">Pages</span>
                 </h3>
-
-                <div class="cardbody"> Information <br>
-                <br>Information 
+                <li> Project 1 </li>
+                <li> Project 2 </li>
                 </div>
                 <a href=""><button class="">More *</button></a>
                     <!-- refernce tab btns for centering completely -->
